@@ -35,11 +35,9 @@ public class PagePicker {
 		while (!exit) {
 
 			int page = pickPage(minPage, maxPage);
-			System.out.println("Picked page " + page);
 			for (int i = 0; i <= pagesDoneNum; i++) {
 				while(page == pagesDone[i]) {
 					page = pickPage(minPage, maxPage);
-					System.out.println("Picked a new page"); 
 					i = 0;
 				} 
 			}
